@@ -1,0 +1,42 @@
+What is Linux: 
+
+A Linux-based system is a modular Unix-like operating system, deriving much of its basic design from
+principles established in Unix during the 1970s and 1980s. Such a system uses a monolithic kernel,
+the Linux kernel, which handles process control, networking, access to the peripherals, and file
+systems. Device drivers are either integrated directly with the kernel, or added as modules that are
+loaded while the system is running.
+Separate projects that interface with the kernel provide much of the system's higher-level
+functionality. The GNU userland is an important part of most Linux-based systems, providing the
+most common implementation of the C library, a popular CLI shell, and many of the common Unix
+tools which carry out many basic operating system tasks. The graphical user interface (or GUI) used
+by most Linux systems is built on top of an implementation of the X Window System. 
+
+Installed components of a Linux system include the following:
+A bootloader, for example GNU GRUB or LILO. This is a program that loads the Linux kernel into the
+computer's main memory, by being executed by the computer when it is turned on and after the
+firmware initialization is performed.
+An init program, such as the traditional system V init and the newer systemd, OpenRC and Upstart.
+This is the first process launched by the Linux kernel, and is at the root of the process tree: in other
+words, all processes are launched through init. It starts processes such as system services and login
+prompts (whether graphical or in terminal mode).
+Software libraries, which contain code that can be used by running processes. On Linux systems
+using ELF-format executable files, the dynamic linker that manages use of dynamic libraries is known
+as ld-linux.so. If the system is set up for the user to compile software themselves, header files will
+also be included to describe the interface of installed libraries. Beside the most commonly used
+software library on Linux systems, the GNU C Library (glibc), there are numerous other libraries.
+C standard library is the library needed to run standard C programs on a computer system, with the
+GNU C Library being the most commonly used
+Widget toolkits are the libraries used to build graphical user interfaces (GUIs) for software
+applications. Numerous widget toolkits are available, including GTK+ and Clutter (software)
+developed by the GNOME project.
+User interface programs such as command shells or windowing environments.
+
+Bash, a shell developed by GNU and widely used in Linux
+The user interface, also known as the shell, is either a command-line interface (CLI), a graphical user
+interface (GUI), or through controls attached to the associated hardware, which is common for
+embedded systems. For desktop systems, the default mode is usually a graphical user interface,
+although the CLI is available through terminal emulator windows or on a separate virtual console.
+CLI shells are the text-based user interfaces, which use text for both input and output. The dominant
+shell used in Linux is the GNU Bourne-Again Shell (bash), originally developed for the GNU project.
+Most low-level Linux components, including various parts of the userland, use the CLI exclusively.
+The CLI is particularly suited for automation of repetitive or delayed tasks, and provides very simple inter-process communication.
